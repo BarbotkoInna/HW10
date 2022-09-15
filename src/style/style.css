@@ -160,18 +160,21 @@ padding-right: 3px;
 }
 
 .hero-section {
-    max-width: 1380px;
+    /* max-width: 1380px; */
     margin: 0 auto 123px;
     background-color: #050827;
     padding: 20px 0;
     background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: cover;
+    background-position: 50% 100%;
+    background-size: contain;
     display: flex;
     align-items: center;
     min-height: 530px;
     color: #FFFFFF;
     text-align: center;
+    width: calc(100vw - 60px);
+    font-size: 17px;
+    line-height: 30px;
 }
 
 .pseudo-title {
@@ -280,6 +283,219 @@ text-transform: uppercase;
     margin-bottom: 35px;
 }
 
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.img-col {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-col-sm {
+    padding: 0 10px;
+    width: calc(100% - 300px);
+}
+
+.img-col-sm .img-holder {
+    margin-bottom: 20px;
+}
+
+.img-col-sm .img-holder:last-child {
+    margin-bottom: 0;
+}
+
+.premium-offer-description {
+    max-width: 400px;
+    padding-left: 60px;
+}
 
 
+.premium-offer-description .title {
+    display: block;
+    margin-bottom: 15px;
+    /* padding: 15px 0 14px; */
+    font-weight: 413;
+    font-size: 36px;
+    line-height: 50px;
+    color: #1D1F2E;
+}
 
+.premium-offer-description .pseudo-title,
+.premium-offer-description .title {
+    color: #1D1F2E;
+}
+
+.premium-offer-description .text-holder p {
+    margin-bottom: 20px;
+}
+
+.visual-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 340px;
+}
+
+.coffee-article h3 {
+    text-align: left;
+    line-height: 32px;
+}
+
+.coffee-article .img-holder {
+    margin-bottom: 30px;
+}
+.coffee-article .date {
+font-size: 12px;
+line-height: 18px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #1D1F2E;
+}
+
+.subscribe {
+    padding: 80px 0 85px;
+    background-color: #1D1F2E;    
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    width: calc(100vw - 60px);
+}
+
+.subscribe h2 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.subscribe h2::before,
+.subscribe h2::after {
+    background-color: rgba(210, 210, 213, 0.1);;
+}
+
+.subscribe .title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 490px;
+}
+
+.subscribe-form .input {
+    border: 1px solid #2F303E;
+    background-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+    padding: 18px;
+    height: 54px;
+    margin-right: 10px;
+    width: calc(100%-152px);
+    font-family: inherit;
+   }
+
+.subscribe-form .btn {
+    padding: 18px 25px;
+}
+.footer {
+    padding: 107px 0 62px;
+}
+
+.footer .logo-holder {
+    margin-bottom: 22px;
+}
+
+.footer .title {
+    display: block;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    /* width: 25%; */
+    max-width: 25%;
+}
+
+
+.footer-col:first-child {
+    max-width: 300px;
+}
+
+.footer .text-holder {
+font-size: 14px;
+line-height: 22px;
+color: rgba(29, 31, 46, 0.7);
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+   margin-bottom: 10px; 
+   line-height: 1px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.7);
+    transition: color ease-in-out 0.3s;
+}
+
+.footer-item a:hover {
+    color: rgba(29, 31, 46, 1);
+}
+
+.footer .mail-title {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.7);
+    margin-bottom: 15px;
+}
+
+.footer .mail-link {
+    font-size: 23px;
+    line-height: 36px;
+    color: #1D1F2E;
+    text-decoration: none;
+    transition: color ease-in-out 0.3s;
+}
+
+.footer .mail-link:hover {
+    color: rgba(29, 31, 46, 0.7);;
+}
+
+.footer .copy-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.3);
+}
+
+.copy-holder a {
+    color: rgba(29, 31, 46, 0.3);
+    transition: color ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.copy-holder a:hover {
+    color: rgba(29, 31, 46, 0.7);
+}
